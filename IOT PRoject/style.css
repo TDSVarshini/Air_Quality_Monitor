@@ -1,0 +1,107 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d;
+  color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #111;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #00ffcc;
+}
+
+.auth-buttons .btn {
+  background: transparent;
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+  background: #00ffcc;
+  color: black;
+}
+
+.signup {
+  border-color: #ff0066;
+  color: #ff0066;
+}
+
+.signup:hover {
+  background: #ff0066;
+  color: #fff;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  margin: 30px 20px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+  border-radius: 20px;
+  padding: 20px 40px;
+  width: 280px;
+  text-align: center;
+  color: white;
+  box-shadow: 8px 8px 15px #050505, -8px -8px 15px #1e1e1e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 12px 12px 20px #050505, -12px -12px 20px #1e1e1e;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: glow 2s infinite alternate;
+}
+
+/* Animation for values */
+@keyframes glow {
+  from { color: #00ffcc; text-shadow: 0 0 10px #00ffcc; }
+  to   { color: #ff0066; text-shadow: 0 0 20px #ff0066; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

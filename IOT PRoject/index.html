@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indoor Air Quality Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>Air Quality Monitor</h1>
+    <div class="auth-buttons">
+      <button class="btn">Sign In</button>
+      <button class="btn signup">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Project intro -->
+  <section class="intro">
+    <p>🌍 Real-time monitoring of Indoor Air Quality</p>
+    <p>📊 Stay updated with live Temperature, Humidity, Gas and Air Quality data</p>
+    <p>💡 Simple, user-friendly, and accessible from anywhere</p>
+  </section>
+
+  <!-- Cards -->
+  <main class="cards">
+    <div class="card" id="temp-card">
+      <h2>🌡️ Temperature</h2>
+      <p id="temp-value">-- °C</p>
+    </div>
+
+    <div class="card" id="humidity-card">
+      <h2>💧 Humidity</h2>
+      <p id="humidity-value">-- %</p>
+    </div>
+
+    <div class="card" id="air-card">
+      <h2>🫁 Air Quality</h2>
+      <p id="air-value">-- AQI</p>
+    </div>
+
+    <div class="card" id="gas-card">
+      <h2>🔥 Gas Level</h2>
+      <p id="gas-value">-- ppm</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
