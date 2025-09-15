@@ -14,3 +14,31 @@ function updateValues() {
 // Update every 2s
 setInterval(updateValues, 2000);
 updateValues();
+
+// FAQ Accordion
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(question => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+
+    // Close other open answers
+    document.querySelectorAll(".faq-answer").forEach(item => {
+      if (item !== answer) {
+        item.style.maxHeight = null;
+        item.style.padding = "0 15px";
+      }
+    });
+
+    // Toggle current one
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+      answer.style.padding = "0 15px";
+      question.querySelector("span").textContent = "+";
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      answer.style.padding = "10px 15px";
+      question.querySelector("span").textContent = "-";
+    }
+  });
+});

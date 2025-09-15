@@ -92,10 +92,27 @@ body {
   animation: glow 2s infinite alternate;
 }
 
-/* Animation for values */
+/* Animation for values 
 @keyframes glow {
   from { color: #00ffcc; text-shadow: 0 0 10px #00ffcc; }
   to   { color: #ff0066; text-shadow: 0 0 20px #ff0066; }
+}
+*/
+@keyframes glow {
+  0%   { color: #00ffcc; text-shadow: 0 0 10px #00ffcc; }
+  10%  { color: #ff0066; text-shadow: 0 0 20px #ff0066; }
+  20%  { color: #ffcc00; text-shadow: 0 0 20px #ffcc00; }
+  30%  { color: #00ff00; text-shadow: 0 0 20px #00ff00; }
+  40%  { color: #0066ff; text-shadow: 0 0 20px #0066ff; }
+  50%  { color: #cc00ff; text-shadow: 0 0 20px #cc00ff; }
+  60%  { color: #ff3300; text-shadow: 0 0 20px #ff3300; }
+  70%  { color: #00ffff; text-shadow: 0 0 20px #00ffff; }
+  80%  { color: #ff0099; text-shadow: 0 0 20px #ff0099; }
+  90%  { color: #99ff00; text-shadow: 0 0 20px #99ff00; }
+  100% { color: #00ffcc; text-shadow: 0 0 10px #00ffcc; } /* back to start */
+}
+.value {
+  animation: glow 10s infinite linear;
 }
 
 /* Responsive */
@@ -105,3 +122,79 @@ body {
     align-items: center;
   }
 }
+
+
+
+
+
+
+/* FAQ Section */
+.faq-section {
+  background-color: #111; /* Black */
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2eff4d; 
+}
+
+.faq {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #2eff5f;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  color: #2eff54e1;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #1a1a1a;
+  padding: 0 15px;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.faq-answer p {
+  padding: 10px 0;
+  color: #ddd;
+}
+
+.faq-question span {
+  font-size: 1.5rem;
+  color: #70ff2e;
+}
+
+
+
+
+
+
+

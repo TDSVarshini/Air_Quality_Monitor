@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #111, #4CAF50);
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.navbar nav a:hover {
+  color: #66ff99;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+  background: #1a1a1a;
+  color: #fff;
+}
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #66ff99;
+}
+.intro p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+/* Benefits */
+.benefits {
+  padding: 50px 20px;
+  background: #111;
+  color: #ddd;
+  text-align: center;
+}
+.benefits h2 {
+  color: #66ff99;
+  margin-bottom: 20px;
+}
+.benefits p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Procedure */
+.procedure {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+.procedure h2 {
+  color: #66ff99;
+  margin-bottom: 30px;
+}
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.step {
+  background: #4CAF50;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.step:hover {
+  transform: scale(1.1);
+  background: #66ff99;
+  color: #111;
+}
+
+/* Team Section */
+.team {
+  padding: 60px 20px;
+  background: #111;
+  text-align: center;
+  color: #fff;
+}
+.team h2 {
+  color: #66ff99;
+  margin-bottom: 40px;
+}
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.card {
+  background: #1a1a1a;
+  border: 2px solid #4CAF50;
+  padding: 20px;
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px #4CAF50;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 25px #66ff99;
+}
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #66ff99;
+}
+.card p {
+  color: #ddd;
+}

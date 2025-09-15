@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a465f6 0%, #85fd95 100%);
+  overflow: hidden;
+}
+
+/* Floating bubbles */
+body::before, body::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  animation: float 8s infinite ease-in-out alternate;
+}
+
+body::before {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: 10%;
+}
+
+body::after {
+  width: 200px;
+  height: 200px;
+  bottom: 15%;
+  right: 15%;
+  animation-duration: 12s;
+}
+
+@keyframes float {
+  from { transform: translateY(0px) rotate(0deg); }
+  to { transform: translateY(-40px) rotate(20deg); }
+}
+
+/* Container */
+.container {
+  z-index: 1;
+}
+
+/* Glass form box */
+.form-box {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+  animation: popIn 1s ease forwards;
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+@keyframes popIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.form-box h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form-box label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 10px;
+  display: block;
+}
+
+.form-box input {
+  padding: 12px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.form-box input:focus {
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(255,255,255,0.6);
+}
+
+.form-box button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: linear-gradient(135deg, black, black);
+  color: #fff;
+}
+
+.form-box button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Switch link */
+.switch {
+  text-align: center;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.switch a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}

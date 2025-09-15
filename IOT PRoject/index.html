@@ -7,23 +7,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Navabar -->
   <header class="navbar">
     <h1>Air Quality Monitor</h1>
     <div class="auth-buttons">
-      <button class="btn">Sign In</button>
-      <button class="btn signup">Sign Up</button>
+      <a href="about.html"><button class="btn">About</button></a>
+      <a href="signin.html"><button class="btn">Sign In</button></a>
+      <a href="signup.html"><button class="btn signup">Sign Up</button></a>
     </div>
   </header>
 
-  <!-- Project intro -->
+  <!-- About home page description  -->
   <section class="intro">
-    <p>🌍 Real-time monitoring of Indoor Air Quality</p>
-    <p>📊 Stay updated with live Temperature, Humidity, Gas and Air Quality data</p>
-    <p>💡 Simple, user-friendly, and accessible from anywhere</p>
+    <p>Real-time monitoring of Indoor Air Quality</p>
+    <p>Stay updated with live Temperature, Humidity, Gas and Air Quality data</p>
   </section>
 
-  <!-- Cards -->
+  <!-- boxes of output -->
   <main class="cards">
     <div class="card" id="temp-card">
       <h2>🌡️ Temperature</h2>
@@ -45,7 +45,42 @@
       <p id="gas-value">-- ppm</p>
     </div>
   </main>
+  <!-- FAQ Section-->
+<!-- FAQ Section -->
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <button class="faq-question">What is an Indoor Air Quality Monitor? <span>+</span></button>
+      <div class="faq-answer">
+        <p>It is a device that measures parameters like Temperature, Humidity, Gas levels, and Air Quality Index (AQI) to help you maintain a healthy environment indoors.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Why should I monitor indoor air quality? <span>+</span></button>
+      <div class="faq-answer">
+        <p>Poor indoor air can lead to breathing issues, allergies, and fatigue. Monitoring helps you take action early to improve your health and comfort.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What do AQI values mean? <span>+</span></button>
+      <div class="faq-answer">
+        <p>AQI 0–50 = Good ✅, 51–100 = Moderate ⚠️, 101–200 = Unhealthy 😷, 201+ = Hazardous 🚫.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I use this system in multiple rooms? <span>+</span></button>
+      <div class="faq-answer">
+        <p>Yes! You can install sensors in multiple rooms and monitor them separately on your dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <script src="script.js"></script>
+
 </body>
 </html>
